@@ -14,8 +14,7 @@
   <Interface name="eth1">
     <delay_asymmetry>0</delay_asymmetry>
     <multicast>0</multicast>
-    <unicast>10.1.2.3</unicast>
-    <unicast>10.1.2.5</unicast>
+    <unicast>192.168.56.108</unicast>
   </Interface>
   
   <Basic>
@@ -32,9 +31,9 @@
   </Clock>
   
   <Intervals>
-    <announce_interval>1</announce_interval>
-    <sync_interval>0</sync_interval>
-    <delay_req_interval>0</delay_req_interval>
+    <announce_interval>4</announce_interval>
+    <sync_interval>4</sync_interval>
+    <delay_req_interval>4</delay_req_interval>
   </Intervals>
 </PTP_config>
 
