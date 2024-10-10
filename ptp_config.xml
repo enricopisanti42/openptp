@@ -7,11 +7,11 @@
     <debug>1</debug>
   </General>
   
-  <Interface name="eth0">
+  <Interface name="enp0s3">
     <multicast>1</multicast>
   </Interface>
   
-  <Interface name="eth1">
+  <Interface name="enp0s8">
     <delay_asymmetry>0</delay_asymmetry>
     <multicast>0</multicast>
     <unicast>192.168.56.108</unicast>
