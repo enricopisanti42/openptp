@@ -15,7 +15,6 @@
     <delay_asymmetry>0</delay_asymmetry>
     <multicast>0</multicast>
     <unicast>192.168.56.108</unicast>
-    <unicast>192.168.56.109</unicast>
   </Interface>
   
   <Basic>
