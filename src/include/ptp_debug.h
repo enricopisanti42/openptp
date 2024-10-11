@@ -44,8 +44,12 @@
     } while(0)
 
 /// Output a message to syslog. Not meant to be used directly.
-#define OUTPUT_SYSLOG(prio,fmt,x...) \
+//#define OUTPUT_SYSLOG(prio,fmt,x...) \
     syslog(LOG_DAEMON | prio, "%s:%i %s: " fmt, \
+            __FILE__, __LINE__, __FUNCTION__, ##x); \
+        
+#define OUTPUT_SYSLOG(prio,fmt,x...) \
+    fprintf((prio == LOG_ERR) ? stderr : stdout, "%s:%i %s: " fmt, \
             __FILE__, __LINE__, __FUNCTION__, ##x); \
 
 #define DEBUG_PLAIN(fmt,x...) DEBUG("[PLAIN] ", fmt, ##x)
